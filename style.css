@@ -1,0 +1,89 @@
+:root {
+    --outline: #6f797a;
+    --fw-normal: 400;
+    --fw-black: 700;
+    --fs-normal: 1.125rem;
+    --fs-large: 1.5rem;
+    --container-bg: #006971;
+    --secondary-bg: #d8e2ff;
+    --input-bg: rgba(218, 228, 229, .01);
+    --on-container: #ffffff;
+    --on-bg: #ffffff;
+    --on-secondary: #0b1b36;
+    --on-input: #ffffff;
+
+}
+
+body {
+    margin: 0;
+    background-color: #fffbff;
+    color: var(--on-bg);
+    font-family: 'Kanit', 'Overpass', sans-serif;
+}
+
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;
+}
+
+.flow > * + * {
+    margin-bottom: 1em;
+}
+
+h1 {
+    color: var(--on-bg);
+    padding-top: 0;
+}
+
+.main {
+    background-color: var(--container-bg);
+    text-align: center;
+    border: 1px solid var(--outline);
+    width: 50vw;
+    /* min-height: 50vh; */
+    max-height: 50vh;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    padding: 0 1.5em;
+    box-shadow: 0px 0px 5px var(--container-bg);
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    border: none;
+    margin-bottom: 1em;
+    line-height: 2rem;
+    padding: .25rem 1rem;
+    background-color: transparent;
+    color: var(--on-input);
+}
+
+input[type=text], input[type=password] {
+    border: none;
+    border-bottom: 2px solid var(--outline);
+  }
+
+  input::placeholder {
+    color: var(--on-input);
+  }
+
+.btn {
+    background-color: var(--secondary-bg);
+    color: var(--on-secondary);
+    font-size: var(--fs-large);
+    font-weight: var(--fw-black);
+    padding: 10px 10px;
+    box-shadow: 0px 0px 5px var(--secondary-bg);
+}
+
+.border-radius {
+    border-radius: 20px;
+}
